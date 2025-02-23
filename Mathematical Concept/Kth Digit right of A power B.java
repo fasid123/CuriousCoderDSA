@@ -1,3 +1,19 @@
+Given two numbers A and B, find Kth digit from right of AB.
+ 
+
+Example 1:
+
+Input:
+A = 3
+B = 3
+K = 1
+Output:
+7
+Explanation:
+33 = 27 and 1st
+digit from right is 
+7
+
 class KthDigitrightofApowerB {
     public static void main(String[] args) {
        int a = 7;
@@ -28,5 +44,8 @@ class KthDigitrightofApowerB {
 condition is if value is 0 then return 0 else do the kth digit value process.
 
 
-input is 81  k = 2
+input 1 is 81  k = 2
 output: 8
+
+input 2 is 0 k = 2
+output : 0
