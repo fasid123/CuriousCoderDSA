@@ -1,20 +1,37 @@
-class FindFirstandLastDigitandSum {
+class DigitsOfNumber {
     public static void main(String[] args) {
-       int n=63457;
+       int n=12;
+       int temp = n;
        int fd = 0;
-
-        //first digit
-       while(n>0){
-          int lds=n%10;
+       if(n < 10) {
+           // number less than 10 print whatever number it is
+           System.out.println(n);
+       }
+       else {
+           //first digit
+        while(temp>0){
+          int lds=temp%10;
           fd = lds;
-          n=n/10;
+          temp = temp/10;
        }
        
        //last digit 
-       int ld = 63457%10;
+       int ld = n%10;
        System.out.println(fd + ld);
+       }
+      
+       
     }
 }
 
-output: 
-13
+condition if a number is less than 10 print whwtever value, else extract first and last digit of number
+
+output 1 :
+
+input : 1
+ouput : 1
+
+ouput 2:
+
+input : 123
+output: 4
