@@ -1,4 +1,4 @@
-class KthDigit right of A power B {
+classKthDigitrightofApowerB {
     public static void main(String[] args) {
        int a = 9;
        int b = 2;
