@@ -1,4 +1,4 @@
-class DigitsOfNumber {
+class FirstAndLastDigitAndSum {
     public static void main(String[] args) {
        int n=12;
        int temp = n;
