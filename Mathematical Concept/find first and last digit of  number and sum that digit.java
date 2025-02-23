@@ -2,6 +2,8 @@ class FindFirstandLastDigitandSum {
     public static void main(String[] args) {
        int n=63457;
        int fd = 0;
+
+        //first digit
        while(n>0){
           int lds=n%10;
           fd = lds;
