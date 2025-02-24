@@ -6,11 +6,11 @@ class Main {
         int count = 1;
         for (int i = 1; i<= n; i++){
             
-            // star
+            // space
             for (int j = 1; j <= i-1; j++){
                 System.out.print("  ");
             }
-            
+            // star
             for (int k = 1; k <= (2*n)-(2*i-1);k++){
                 System.out.print("* ");
             }
