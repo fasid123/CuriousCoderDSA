@@ -37,6 +37,7 @@ alternate code :
         for(int i=2;i<x;i++){  // 2 to 2 : not go to condition so value is prime, 2 to 3 : go to condition 3 % 2, 2 to 4 : 
             if(x%i==0){
                 flag = 1;
+                break;
             }      
         }   
         if(flag==0){
