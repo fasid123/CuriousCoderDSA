@@ -16,17 +16,28 @@ Hence sum of the series is 55.
 
 Code:
 
-class Solution {
-    static long sumOfTheSeries(long n){
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
         // code here
-        int sum = 0, oddTerm = 0;
-        for (int i = 1 ; i<= 2*n-1 ; i= i+2){
+        int sum = 0; 
+        int seriesTerm = 0;
+        for (int i =1; i<= 2*n-1; i=i+2){
             sum = sum + i;
-            oddTerm = oddTerm + sum;
+            seriesTerm = seriesTerm + sum;
         }
-        return oddTerm;
+        System.out.println(seriesTerm);
+    
+
+    
+};
+
     }
-}
+
 
 
 Output: 
