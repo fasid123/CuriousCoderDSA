@@ -1,0 +1,42 @@
+Squares Difference
+
+Given an integer N, find the absolute difference between sum of the squares of first N natural numbers and square of sum of first N natural numbers.
+
+Input: N = 2
+Output: 4 
+Explanation: abs|(1^2 + 2^2) - (1 + 2)^2| = 4.
+
+Input: N = 3
+Output: 22
+Explanation: abs|(1^2 + 2^2 + 3^2) - (1 + 2 + 3)^2| = 22.
+
+
+code:
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+      
+        int N = 3;
+        // code here
+        long sum = 0;
+        long second = 0;
+        for (long i = 1; i<= N;i++){
+            sum  = sum + i * i;
+            second = second + i;
+        }
+        long val = second * second;
+        
+        System.out.println(val-sum);
+
+
+    
+};
+
+    }
+
+output:
+input: 3
+output : 22
