@@ -6,10 +6,9 @@ class Main {
         while (b != 0) {
              int temp = b;
              b  = a % b;
-             System.out.println(b);
              a = temp;
-             System.out.println(a);
+          
         }
-       // System.out.println(a);
+        System.out.println(a);
     }
 }
