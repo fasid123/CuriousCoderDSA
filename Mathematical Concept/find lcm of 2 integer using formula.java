@@ -1,3 +1,6 @@
+formula =  (a * b) / gcd of ( a,b )
+------------------------------------------------
+    
 import java.util.Scanner;
 
 public class LCMCalculator {
