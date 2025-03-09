@@ -1,4 +1,4 @@
-formula =  (a * b) / gcd of ( a,b )
+lcm formula =  (a * b) / gcd of ( a,b )
 ------------------------------------------------
     
 import java.util.Scanner;
