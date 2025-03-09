@@ -5,7 +5,7 @@ int main() {
     for(int i=2;i<n;i++){
         if(n%i==0){
             flag = 1;
-            cout <<"j";
+           
         }
     }
     if (n == 1 || n == 0){
