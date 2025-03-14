@@ -1,4 +1,15 @@
 bubble sort 
+    
+Property:
+There are n elements.
+If 4 elements sorted position means 5 th element in correct position.
+When we sort n-1 elements , means the nth element is sorted way.
+This is basic logic.
+
+Bubble sort technique: 
+
+Every iteration n-i th value will be correct value , from back we will the correct value
+
 code:
 
 import java.util.*;
