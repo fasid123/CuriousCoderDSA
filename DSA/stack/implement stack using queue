@@ -1,0 +1,64 @@
+3 steps:
+
+Push value into q2
+Check if q1 is empty then go to 3rd step
+If q1 is not empty leave else , i am going to push all the element from q1 to q2
+Swap q2 value to q1. Vice versa
+
+Code:
+import java.util.LinkedList;
+import java.util.Queue;
+
+class StackUsingQueues {
+    Queue<Integer> q1 = new LinkedList<>();
+    Queue<Integer> q2 = new LinkedList<>();
+
+    // Push operation (costly)
+    public void push(int val) {
+        // Step 1: Push to q2
+        q2.add(val);
+
+        // Step 2: Push everything from q1 to q2
+        while (!q1.isEmpty()) {
+            q2.add(q1.remove());
+        }
+
+        // Step 3: Swap q1 and q2
+        Queue<Integer> temp = q1;
+        q1 = q2;
+        q2 = temp;
+    }
+
+    // Pop operation
+    public int pop() {
+        if (q1.isEmpty()) {
+            return -1;
+        }
+        return q1.remove();
+    }
+
+    // Peek operation
+    public int top() {
+        if (q1.isEmpty()) {
+            return -1;
+        }
+        return q1.peek();
+    }
+
+    public boolean isEmpty() {
+        return q1.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        StackUsingQueues stack = new StackUsingQueues();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+
+        System.out.println(stack.pop()); // 30
+        System.out.println(stack.top()); // 20
+        System.out.println(stack.pop()); // 20
+        System.out.println(stack.pop()); // 10
+        System.out.println(stack.pop()); // -1 (empty)
+    }
+}
